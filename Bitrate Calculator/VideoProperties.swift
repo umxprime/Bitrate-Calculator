@@ -28,9 +28,9 @@
 import Foundation
 
 public struct VideoProperties: Equatable {
-    var videoBitrateKbps:UInt64
-    var audioBitrateKbps:UInt64
-    var audioChannelsCount:UInt
-    var duration:TimeInterval
-    var fileSizeKB:UInt64
+    var videoBitrateKbps: UInt64
+    var audioBitrateKbps: UInt64
+    var audioChannelsCount: UInt
+    var duration: TimeInterval
+    var fileSizeKB: UInt64
 }

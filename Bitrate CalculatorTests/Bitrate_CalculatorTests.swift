@@ -62,7 +62,7 @@ class Bitrate_CalculatorTests: XCTestCase {
         XCTAssertEqual(result.videoBitrateKbps, 1300)
     }
     
-    func testVideoPropertiesEquality() {
+    func testVideoBitrateChangeAffectFileSize() {
         let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
         let initialVideoProperties = VideoProperties(
             videoBitrateKbps: 0,
@@ -70,14 +70,14 @@ class Bitrate_CalculatorTests: XCTestCase {
             audioChannelsCount: 0,
             duration: 100 * 60,
             fileSizeKB: 0)
-        let resultingVideoProperties = VideoProperties(
+        let expected = VideoProperties(
             videoBitrateKbps: 1300,
             audioBitrateKbps: 0,
             audioChannelsCount: 0,
             duration: 100 * 60,
             fileSizeKB: 975000)
-        let result = calculator.solve(videoBitrate:resultingVideoProperties.videoBitrateKbps, from:initialVideoProperties)
-        XCTAssertEqual(result, resultingVideoProperties)
+        let result = calculator.solve(videoBitrate:expected.videoBitrateKbps, from:initialVideoProperties)
+        XCTAssertEqual(result, expected)
     }
 
 }
