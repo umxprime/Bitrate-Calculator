@@ -27,7 +27,7 @@
 
 import Foundation
 
-public struct VideoProperties {
+public struct VideoProperties: Equatable {
     var videoBitrateKbps:UInt64
     var audioBitrateKbps:UInt64
     var audioChannelsCount:UInt

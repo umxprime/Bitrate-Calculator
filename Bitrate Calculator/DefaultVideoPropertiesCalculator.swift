@@ -37,6 +37,6 @@ extension DefaultVideoPropertiesCalculator: VideoPropertiesCalculator {
             videoBitrateKbps: videoBitrate,
             audioBitrateKbps: 0,
             audioChannelsCount: 0,
-            duration: 0)
+            duration: from.duration)
     }
 }
