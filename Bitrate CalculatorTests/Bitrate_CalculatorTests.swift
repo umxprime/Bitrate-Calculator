@@ -38,11 +38,18 @@ class Bitrate_CalculatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testVideoBitrateChange() {
+    func testVideoBitrateChangeTo1200() {
         let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
         let initialVideoProperties = VideoProperties(videoBitrateKbps: 0, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
         let result = calculator.solve(videoBitrate:1200, from:initialVideoProperties)
         XCTAssertEqual(result.videoBitrateKbps, 1200)
+    }
+    
+    func testVideoBitrateChangeTo1300() {
+        let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
+        let initialVideoProperties = VideoProperties(videoBitrateKbps: 0, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
+        let result = calculator.solve(videoBitrate:1300, from:initialVideoProperties)
+        XCTAssertEqual(result.videoBitrateKbps, 1300)
     }
 
 }
