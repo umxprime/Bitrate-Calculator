@@ -28,8 +28,8 @@
 import Foundation
 
 public struct VideoProperties {
-    var videoBitrateKbps:Int64
-    var audioBitrateKbps:Int64
-    var audioChannelsCount:Int
+    var videoBitrateKbps:UInt64
+    var audioBitrateKbps:UInt64
+    var audioChannelsCount:UInt
     var duration:TimeInterval
 }

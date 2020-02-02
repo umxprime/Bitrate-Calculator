@@ -34,7 +34,7 @@ public class DefaultVideoPropertiesCalculator {
 extension DefaultVideoPropertiesCalculator: VideoPropertiesCalculator {
     public func solve(videoBitrate: UInt64, from: VideoProperties) -> VideoProperties {
         return VideoProperties(
-            videoBitrateKbps: 1200,
+            videoBitrateKbps: videoBitrate,
             audioBitrateKbps: 0,
             audioChannelsCount: 0,
             duration: 0)
