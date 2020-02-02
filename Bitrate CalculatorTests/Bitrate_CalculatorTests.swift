@@ -86,7 +86,7 @@ class Bitrate_CalculatorTests: XCTestCase {
          XCTAssertEqual(result.video, expectedVideoProperties)
     }
     
-    func testVideoBitrateChangeAffectFileSize() {
+    func testVideoPropertiesChangeAffectFileSize() {
         let initialVideoFileProperties = VideoFileProperties(
            video: VideoFileProperties.VideoProperties(
                bitrateKbps: 0
@@ -115,7 +115,7 @@ class Bitrate_CalculatorTests: XCTestCase {
         XCTAssertEqual(result, expectedVideoFileProperties)
     }
     
-    func testAudioBitrateChangeAffectFileSize() {
+    func testAudioPropertiesChangeAffectFileSize() {
         let initialVideoFileProperties = VideoFileProperties(
            video: VideoFileProperties.VideoProperties(
                bitrateKbps: 0

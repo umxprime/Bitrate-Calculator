@@ -29,7 +29,7 @@ import Foundation
 
 public class DefaultVideoFilePropertiesCalculator {
     
-    var videoFileProperties: VideoFileProperties
+    public private(set) var videoFileProperties: VideoFileProperties
     
     init(_ videoFileProperties: VideoFileProperties) {
         self.videoFileProperties = videoFileProperties
@@ -37,6 +37,13 @@ public class DefaultVideoFilePropertiesCalculator {
 }
 
 extension DefaultVideoFilePropertiesCalculator: VideoFilePropertiesCalculator {
+    
+    public func change(audioProperties: VideoFileProperties.AudioProperties) -> VideoFileProperties {
+        videoFileProperties.audio = audioProperties
+        videoFileProperties.fileSizeKB = audioProperties.bitrateKbps * UInt64(audioProperties.tracksCount) * UInt64(videoFileProperties.duration) / 8
+        return videoFileProperties
+    }
+    
     public func change(videoProperties: VideoFileProperties.VideoProperties) -> VideoFileProperties {
         videoFileProperties.video = videoProperties
         videoFileProperties.fileSizeKB = videoProperties.bitrateKbps * UInt64(videoFileProperties.duration) / 8

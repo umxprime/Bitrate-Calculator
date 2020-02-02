@@ -28,5 +28,10 @@
 import Foundation
 
 public protocol VideoFilePropertiesCalculator {
-    func change(videoProperties:VideoFileProperties.VideoProperties) -> VideoFileProperties
+    
+    var videoFileProperties: VideoFileProperties {get}
+    
+    func change(videoProperties: VideoFileProperties.VideoProperties) -> VideoFileProperties
+    
+    func change(audioProperties: VideoFileProperties.AudioProperties) -> VideoFileProperties
 }
