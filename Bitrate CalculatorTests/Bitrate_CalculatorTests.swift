@@ -40,22 +40,42 @@ class Bitrate_CalculatorTests: XCTestCase {
 
     func testVideoBitrateChangeTo1200() {
         let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
-        let initialVideoProperties = VideoProperties(videoBitrateKbps: 0, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
+        let initialVideoProperties = VideoProperties(
+            videoBitrateKbps: 0,
+            audioBitrateKbps: 0,
+            audioChannelsCount: 0,
+            duration: 100 * 60,
+            fileSizeKB: 0)
         let result = calculator.solve(videoBitrate:1200, from:initialVideoProperties)
         XCTAssertEqual(result.videoBitrateKbps, 1200)
     }
     
     func testVideoBitrateChangeTo1300() {
         let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
-        let initialVideoProperties = VideoProperties(videoBitrateKbps: 0, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
+        let initialVideoProperties = VideoProperties(
+            videoBitrateKbps: 0,
+            audioBitrateKbps: 0,
+            audioChannelsCount: 0,
+            duration: 100 * 60,
+            fileSizeKB: 0)
         let result = calculator.solve(videoBitrate:1300, from:initialVideoProperties)
         XCTAssertEqual(result.videoBitrateKbps, 1300)
     }
     
     func testVideoPropertiesEquality() {
         let calculator:VideoPropertiesCalculator = DefaultVideoPropertiesCalculator()
-        let initialVideoProperties = VideoProperties(videoBitrateKbps: 0, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
-        let resultingVideoProperties = VideoProperties(videoBitrateKbps: 1300, audioBitrateKbps: 0, audioChannelsCount: 0, duration: 100 * 3600)
+        let initialVideoProperties = VideoProperties(
+            videoBitrateKbps: 0,
+            audioBitrateKbps: 0,
+            audioChannelsCount: 0,
+            duration: 100 * 60,
+            fileSizeKB: 0)
+        let resultingVideoProperties = VideoProperties(
+            videoBitrateKbps: 1300,
+            audioBitrateKbps: 0,
+            audioChannelsCount: 0,
+            duration: 100 * 60,
+            fileSizeKB: 975000)
         let result = calculator.solve(videoBitrate:resultingVideoProperties.videoBitrateKbps, from:initialVideoProperties)
         XCTAssertEqual(result, resultingVideoProperties)
     }

@@ -32,4 +32,5 @@ public struct VideoProperties: Equatable {
     var audioBitrateKbps:UInt64
     var audioChannelsCount:UInt
     var duration:TimeInterval
+    var fileSizeKB:UInt64
 }
