@@ -29,16 +29,16 @@ import Foundation
 
 public struct VideoFileProperties: Equatable {
     public struct AudioProperties: Equatable {
-        var bitrateKbps: UInt64
-        var tracksCount: UInt
+        var bitrateKbps: UInt64 = 0
+        var tracksCount: UInt = 0
     }
 
     public struct VideoProperties: Equatable {
-        var bitrateKbps: UInt64
+        var bitrateKbps: UInt64 = 0
     }
     
-    var video: VideoProperties
-    var audio: AudioProperties
-    var duration: TimeInterval
-    var fileSizeKB: UInt64
+    var video: VideoProperties = VideoProperties()
+    var audio: AudioProperties = AudioProperties()
+    var duration: TimeInterval = 0
+    var fileSizeKB: UInt64 = 0
 }

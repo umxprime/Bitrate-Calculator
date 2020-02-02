@@ -40,13 +40,8 @@ class Bitrate_CalculatorTests: XCTestCase {
 
     func testVideoBitrateChangeTo1200() {
         let initialVideoFileProperties = VideoFileProperties(
-            video: VideoFileProperties.VideoProperties(
-                bitrateKbps: 0
-            ),
-            audio: VideoFileProperties.AudioProperties(
-                bitrateKbps: 0,
-                tracksCount: 0
-            ),
+            video: VideoFileProperties.VideoProperties(),
+            audio: VideoFileProperties.AudioProperties(),
             duration: 100 * 60,
             fileSizeKB: 0
         )
@@ -64,13 +59,8 @@ class Bitrate_CalculatorTests: XCTestCase {
     
     func testVideoBitrateChangeTo1300() {
          let initialVideoFileProperties = VideoFileProperties(
-            video: VideoFileProperties.VideoProperties(
-                bitrateKbps: 0
-            ),
-            audio: VideoFileProperties.AudioProperties(
-                bitrateKbps: 0,
-                tracksCount: 0
-            ),
+            video: VideoFileProperties.VideoProperties(),
+            audio: VideoFileProperties.AudioProperties(),
             duration: 100 * 60,
             fileSizeKB: 0
          )
@@ -88,13 +78,8 @@ class Bitrate_CalculatorTests: XCTestCase {
     
     func testVideoPropertiesChangeAffectFileSize() {
         let initialVideoFileProperties = VideoFileProperties(
-           video: VideoFileProperties.VideoProperties(
-               bitrateKbps: 0
-           ),
-           audio: VideoFileProperties.AudioProperties(
-               bitrateKbps: 0,
-               tracksCount: 0
-           ),
+           video: VideoFileProperties.VideoProperties(),
+           audio: VideoFileProperties.AudioProperties(),
            duration: 100 * 60,
            fileSizeKB: 0
         )
@@ -102,10 +87,7 @@ class Bitrate_CalculatorTests: XCTestCase {
            video: VideoFileProperties.VideoProperties(
                bitrateKbps: 1300
            ),
-           audio: VideoFileProperties.AudioProperties(
-               bitrateKbps: 0,
-               tracksCount: 0
-           ),
+           audio: VideoFileProperties.AudioProperties(),
            duration: 100 * 60,
            fileSizeKB: 975000
         )
@@ -117,20 +99,13 @@ class Bitrate_CalculatorTests: XCTestCase {
     
     func testAudioPropertiesChangeAffectFileSize() {
         let initialVideoFileProperties = VideoFileProperties(
-           video: VideoFileProperties.VideoProperties(
-               bitrateKbps: 0
-           ),
-           audio: VideoFileProperties.AudioProperties(
-               bitrateKbps: 0,
-               tracksCount: 0
-           ),
+           video: VideoFileProperties.VideoProperties(),
+           audio: VideoFileProperties.AudioProperties(),
            duration: 100 * 60,
            fileSizeKB: 0
         )
         let expectedVideoFileProperties = VideoFileProperties(
-           video: VideoFileProperties.VideoProperties(
-               bitrateKbps: 0
-           ),
+           video: VideoFileProperties.VideoProperties(),
            audio: VideoFileProperties.AudioProperties(
                bitrateKbps: 160,
                tracksCount: 2
