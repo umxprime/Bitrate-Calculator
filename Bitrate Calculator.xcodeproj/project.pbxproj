@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360E487F23E72269008CAF19 /* VideoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoProperties.swift */; };
+		360E488023E72269008CAF19 /* VideoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoProperties.swift */; };
+		360E488223E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */; };
+		360E488323E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */; };
+		360E488523E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */; };
+		360E488623E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */; };
+		48110E9F23E6E97100FCD008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110E9E23E6E97100FCD008 /* AppDelegate.swift */; };
+		48110EA123E6E97100FCD008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110EA023E6E97100FCD008 /* ContentView.swift */; };
+		48110EA323E6E97F00FCD008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48110EA223E6E97F00FCD008 /* Assets.xcassets */; };
+		48110EA623E6E97F00FCD008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48110EA523E6E97F00FCD008 /* Preview Assets.xcassets */; };
+		48110EA923E6E97F00FCD008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48110EA723E6E97F00FCD008 /* Main.storyboard */; };
+		48110EB523E6E98000FCD008 /* Bitrate_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110EB423E6E98000FCD008 /* Bitrate_CalculatorTests.swift */; };
+		48110EC023E6E98000FCD008 /* Bitrate_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110EBF23E6E98000FCD008 /* Bitrate_CalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48110EB123E6E98000FCD008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48110E9323E6E97100FCD008 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48110E9A23E6E97100FCD008;
+			remoteInfo = "Bitrate Calculator";
+		};
+		48110EBC23E6E98000FCD008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48110E9323E6E97100FCD008 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48110E9A23E6E97100FCD008;
+			remoteInfo = "Bitrate Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360E487E23E72269008CAF19 /* VideoProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProperties.swift; sourceTree = "<group>"; };
+		360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPropertiesCalculator.swift; sourceTree = "<group>"; };
+		360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVideoPropertiesCalculator.swift; sourceTree = "<group>"; };
+		48110E9B23E6E97100FCD008 /* Bitrate Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitrate Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48110E9E23E6E97100FCD008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48110EA023E6E97100FCD008 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48110EA223E6E97F00FCD008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48110EA523E6E97F00FCD008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48110EA823E6E97F00FCD008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48110EAA23E6E97F00FCD008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48110EAB23E6E97F00FCD008 /* Bitrate_Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bitrate_Calculator.entitlements; sourceTree = "<group>"; };
+		48110EB023E6E98000FCD008 /* Bitrate CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bitrate CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48110EB423E6E98000FCD008 /* Bitrate_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitrate_CalculatorTests.swift; sourceTree = "<group>"; };
+		48110EB623E6E98000FCD008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48110EBB23E6E98000FCD008 /* Bitrate CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bitrate CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48110EBF23E6E98000FCD008 /* Bitrate_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitrate_CalculatorUITests.swift; sourceTree = "<group>"; };
+		48110EC123E6E98100FCD008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48110E9823E6E97100FCD008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EAD23E6E98000FCD008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EB823E6E98000FCD008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48110E9223E6E97000FCD008 = {
+			isa = PBXGroup;
+			children = (
+				48110E9D23E6E97100FCD008 /* Bitrate Calculator */,
+				48110EB323E6E98000FCD008 /* Bitrate CalculatorTests */,
+				48110EBE23E6E98000FCD008 /* Bitrate CalculatorUITests */,
+				48110E9C23E6E97100FCD008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48110E9C23E6E97100FCD008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48110E9B23E6E97100FCD008 /* Bitrate Calculator.app */,
+				48110EB023E6E98000FCD008 /* Bitrate CalculatorTests.xctest */,
+				48110EBB23E6E98000FCD008 /* Bitrate CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48110E9D23E6E97100FCD008 /* Bitrate Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				48110E9E23E6E97100FCD008 /* AppDelegate.swift */,
+				48110EA023E6E97100FCD008 /* ContentView.swift */,
+				48110EA223E6E97F00FCD008 /* Assets.xcassets */,
+				48110EA723E6E97F00FCD008 /* Main.storyboard */,
+				48110EAA23E6E97F00FCD008 /* Info.plist */,
+				48110EAB23E6E97F00FCD008 /* Bitrate_Calculator.entitlements */,
+				48110EA423E6E97F00FCD008 /* Preview Content */,
+				360E487E23E72269008CAF19 /* VideoProperties.swift */,
+				360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */,
+				360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */,
+			);
+			path = "Bitrate Calculator";
+			sourceTree = "<group>";
+		};
+		48110EA423E6E97F00FCD008 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48110EA523E6E97F00FCD008 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48110EB323E6E98000FCD008 /* Bitrate CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				48110EB423E6E98000FCD008 /* Bitrate_CalculatorTests.swift */,
+				48110EB623E6E98000FCD008 /* Info.plist */,
+			);
+			path = "Bitrate CalculatorTests";
+			sourceTree = "<group>";
+		};
+		48110EBE23E6E98000FCD008 /* Bitrate CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48110EBF23E6E98000FCD008 /* Bitrate_CalculatorUITests.swift */,
+				48110EC123E6E98100FCD008 /* Info.plist */,
+			);
+			path = "Bitrate CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48110E9A23E6E97100FCD008 /* Bitrate Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48110EC423E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate Calculator" */;
+			buildPhases = (
+				48110E9723E6E97100FCD008 /* Sources */,
+				48110E9823E6E97100FCD008 /* Frameworks */,
+				48110E9923E6E97100FCD008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bitrate Calculator";
+			productName = "Bitrate Calculator";
+			productReference = 48110E9B23E6E97100FCD008 /* Bitrate Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48110EAF23E6E98000FCD008 /* Bitrate CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48110EC723E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate CalculatorTests" */;
+			buildPhases = (
+				48110EAC23E6E98000FCD008 /* Sources */,
+				48110EAD23E6E98000FCD008 /* Frameworks */,
+				48110EAE23E6E98000FCD008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48110EB223E6E98000FCD008 /* PBXTargetDependency */,
+			);
+			name = "Bitrate CalculatorTests";
+			productName = "Bitrate CalculatorTests";
+			productReference = 48110EB023E6E98000FCD008 /* Bitrate CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48110EBA23E6E98000FCD008 /* Bitrate CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48110ECA23E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate CalculatorUITests" */;
+			buildPhases = (
+				48110EB723E6E98000FCD008 /* Sources */,
+				48110EB823E6E98000FCD008 /* Frameworks */,
+				48110EB923E6E98000FCD008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48110EBD23E6E98000FCD008 /* PBXTargetDependency */,
+			);
+			name = "Bitrate CalculatorUITests";
+			productName = "Bitrate CalculatorUITests";
+			productReference = 48110EBB23E6E98000FCD008 /* Bitrate CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48110E9323E6E97100FCD008 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = umxprime;
+				TargetAttributes = {
+					48110E9A23E6E97100FCD008 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					48110EAF23E6E98000FCD008 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 48110E9A23E6E97100FCD008;
+					};
+					48110EBA23E6E98000FCD008 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 48110E9A23E6E97100FCD008;
+					};
+				};
+			};
+			buildConfigurationList = 48110E9623E6E97100FCD008 /* Build configuration list for PBXProject "Bitrate Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48110E9223E6E97000FCD008;
+			productRefGroup = 48110E9C23E6E97100FCD008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48110E9A23E6E97100FCD008 /* Bitrate Calculator */,
+				48110EAF23E6E98000FCD008 /* Bitrate CalculatorTests */,
+				48110EBA23E6E98000FCD008 /* Bitrate CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48110E9923E6E97100FCD008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48110EA923E6E97F00FCD008 /* Main.storyboard in Resources */,
+				48110EA623E6E97F00FCD008 /* Preview Assets.xcassets in Resources */,
+				48110EA323E6E97F00FCD008 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EAE23E6E98000FCD008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EB923E6E98000FCD008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48110E9723E6E97100FCD008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E488223E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */,
+				48110EA123E6E97100FCD008 /* ContentView.swift in Sources */,
+				360E488523E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */,
+				360E487F23E72269008CAF19 /* VideoProperties.swift in Sources */,
+				48110E9F23E6E97100FCD008 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EAC23E6E98000FCD008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E488623E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */,
+				360E488023E72269008CAF19 /* VideoProperties.swift in Sources */,
+				48110EB523E6E98000FCD008 /* Bitrate_CalculatorTests.swift in Sources */,
+				360E488323E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48110EB723E6E98000FCD008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48110EC023E6E98000FCD008 /* Bitrate_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48110EB223E6E98000FCD008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48110E9A23E6E97100FCD008 /* Bitrate Calculator */;
+			targetProxy = 48110EB123E6E98000FCD008 /* PBXContainerItemProxy */;
+		};
+		48110EBD23E6E98000FCD008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48110E9A23E6E97100FCD008 /* Bitrate Calculator */;
+			targetProxy = 48110EBC23E6E98000FCD008 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48110EA723E6E97F00FCD008 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48110EA823E6E97F00FCD008 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48110EC223E6E98100FCD008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48110EC323E6E98100FCD008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		48110EC523E6E98100FCD008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bitrate Calculator/Bitrate_Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Bitrate Calculator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bitrate Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		48110EC623E6E98100FCD008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bitrate Calculator/Bitrate_Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Bitrate Calculator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bitrate Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		48110EC823E6E98100FCD008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bitrate CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitrate Calculator.app/Contents/MacOS/Bitrate Calculator";
+			};
+			name = Debug;
+		};
+		48110EC923E6E98100FCD008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bitrate CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitrate Calculator.app/Contents/MacOS/Bitrate Calculator";
+			};
+			name = Release;
+		};
+		48110ECB23E6E98100FCD008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bitrate CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Bitrate Calculator";
+			};
+			name = Debug;
+		};
+		48110ECC23E6E98100FCD008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bitrate CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umxprime.Bitrate-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Bitrate Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48110E9623E6E97100FCD008 /* Build configuration list for PBXProject "Bitrate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48110EC223E6E98100FCD008 /* Debug */,
+				48110EC323E6E98100FCD008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48110EC423E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48110EC523E6E98100FCD008 /* Debug */,
+				48110EC623E6E98100FCD008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48110EC723E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48110EC823E6E98100FCD008 /* Debug */,
+				48110EC923E6E98100FCD008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48110ECA23E6E98100FCD008 /* Build configuration list for PBXNativeTarget "Bitrate CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48110ECB23E6E98100FCD008 /* Debug */,
+				48110ECC23E6E98100FCD008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48110E9323E6E97100FCD008 /* Project object */;
+}
