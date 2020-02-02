@@ -1,5 +1,5 @@
 //
-//  DefaultVideoPropertiesCalculator.swift
+//  VideoFilePropertiesCalculator.swift
 //  Bitrate Calculator
 //
 //  MIT License
@@ -27,17 +27,6 @@
 
 import Foundation
 
-public class DefaultVideoPropertiesCalculator {
-    
-}
-
-extension DefaultVideoPropertiesCalculator: VideoPropertiesCalculator {
-    public func solve(videoBitrate: UInt64, from: VideoProperties) -> VideoProperties {
-        return VideoProperties(
-            videoBitrateKbps: videoBitrate,
-            audioBitrateKbps: from.audioBitrateKbps,
-            audioChannelsCount: from.audioChannelsCount,
-            duration: from.duration,
-            fileSizeKB: videoBitrate * UInt64(from.duration) / 8)
-    }
+public protocol VideoFilePropertiesCalculator {
+    func change(videoProperties:VideoFileProperties.VideoProperties) -> VideoFileProperties
 }

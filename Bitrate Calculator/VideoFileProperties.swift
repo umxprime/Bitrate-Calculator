@@ -1,5 +1,5 @@
 //
-//  VideoPropertiesCalculator.swift
+//  VideoFileProperties.swift
 //  Bitrate Calculator
 //
 //  MIT License
@@ -27,6 +27,18 @@
 
 import Foundation
 
-public protocol VideoPropertiesCalculator {
-    func solve(videoBitrate:UInt64, from: VideoProperties) -> VideoProperties
+public struct VideoFileProperties: Equatable {
+    public struct AudioProperties: Equatable {
+        var bitrateKbps: UInt64
+        var tracksCount: UInt
+    }
+
+    public struct VideoProperties: Equatable {
+        var bitrateKbps: UInt64
+    }
+    
+    var video: VideoProperties
+    var audio: AudioProperties
+    var duration: TimeInterval
+    var fileSizeKB: UInt64
 }

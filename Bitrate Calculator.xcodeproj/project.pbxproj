@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		360E487F23E72269008CAF19 /* VideoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoProperties.swift */; };
-		360E488023E72269008CAF19 /* VideoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoProperties.swift */; };
-		360E488223E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */; };
-		360E488323E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */; };
-		360E488523E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */; };
-		360E488623E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */; };
+		360E487F23E72269008CAF19 /* VideoFileProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoFileProperties.swift */; };
+		360E488023E72269008CAF19 /* VideoFileProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E487E23E72269008CAF19 /* VideoFileProperties.swift */; };
+		360E488223E7248D008CAF19 /* VideoFilePropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoFilePropertiesCalculator.swift */; };
+		360E488323E7248D008CAF19 /* VideoFilePropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488123E7248D008CAF19 /* VideoFilePropertiesCalculator.swift */; };
+		360E488523E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift */; };
+		360E488623E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E488423E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift */; };
 		48110E9F23E6E97100FCD008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110E9E23E6E97100FCD008 /* AppDelegate.swift */; };
 		48110EA123E6E97100FCD008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48110EA023E6E97100FCD008 /* ContentView.swift */; };
 		48110EA323E6E97F00FCD008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48110EA223E6E97F00FCD008 /* Assets.xcassets */; };
@@ -40,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		360E487E23E72269008CAF19 /* VideoProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProperties.swift; sourceTree = "<group>"; };
-		360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPropertiesCalculator.swift; sourceTree = "<group>"; };
-		360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVideoPropertiesCalculator.swift; sourceTree = "<group>"; };
+		360E487E23E72269008CAF19 /* VideoFileProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFileProperties.swift; sourceTree = "<group>"; };
+		360E488123E7248D008CAF19 /* VideoFilePropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilePropertiesCalculator.swift; sourceTree = "<group>"; };
+		360E488423E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVideoFilePropertiesCalculator.swift; sourceTree = "<group>"; };
 		48110E9B23E6E97100FCD008 /* Bitrate Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitrate Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48110E9E23E6E97100FCD008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48110EA023E6E97100FCD008 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,9 +114,9 @@
 				48110EAA23E6E97F00FCD008 /* Info.plist */,
 				48110EAB23E6E97F00FCD008 /* Bitrate_Calculator.entitlements */,
 				48110EA423E6E97F00FCD008 /* Preview Content */,
-				360E487E23E72269008CAF19 /* VideoProperties.swift */,
-				360E488123E7248D008CAF19 /* VideoPropertiesCalculator.swift */,
-				360E488423E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift */,
+				360E487E23E72269008CAF19 /* VideoFileProperties.swift */,
+				360E488123E7248D008CAF19 /* VideoFilePropertiesCalculator.swift */,
+				360E488423E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift */,
 			);
 			path = "Bitrate Calculator";
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360E488223E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */,
+				360E488223E7248D008CAF19 /* VideoFilePropertiesCalculator.swift in Sources */,
 				48110EA123E6E97100FCD008 /* ContentView.swift in Sources */,
-				360E488523E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */,
-				360E487F23E72269008CAF19 /* VideoProperties.swift in Sources */,
+				360E488523E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift in Sources */,
+				360E487F23E72269008CAF19 /* VideoFileProperties.swift in Sources */,
 				48110E9F23E6E97100FCD008 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360E488623E72536008CAF19 /* DefaultVideoPropertiesCalculator.swift in Sources */,
-				360E488023E72269008CAF19 /* VideoProperties.swift in Sources */,
+				360E488623E72536008CAF19 /* DefaultVideoFilePropertiesCalculator.swift in Sources */,
+				360E488023E72269008CAF19 /* VideoFileProperties.swift in Sources */,
 				48110EB523E6E98000FCD008 /* Bitrate_CalculatorTests.swift in Sources */,
-				360E488323E7248D008CAF19 /* VideoPropertiesCalculator.swift in Sources */,
+				360E488323E7248D008CAF19 /* VideoFilePropertiesCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
