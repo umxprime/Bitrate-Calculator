@@ -34,19 +34,27 @@ public class DefaultVideoFilePropertiesCalculator {
     init(_ videoFileProperties: VideoFileProperties) {
         self.videoFileProperties = videoFileProperties
     }
+    
+    private func videoTrackSizeKB() -> UInt64 {
+        return videoFileProperties.video.bitrateKbps * UInt64(videoFileProperties.duration) / 8
+    }
+    
+    private func audioTracksSizeKB() -> UInt64 {
+        return videoFileProperties.audio.bitrateKbps * UInt64(videoFileProperties.audio.tracksCount) * UInt64(videoFileProperties.duration) / 8
+    }
 }
 
 extension DefaultVideoFilePropertiesCalculator: VideoFilePropertiesCalculator {
     
     public func change(audioProperties: VideoFileProperties.AudioProperties) -> VideoFileProperties {
         videoFileProperties.audio = audioProperties
-        videoFileProperties.fileSizeKB = audioProperties.bitrateKbps * UInt64(audioProperties.tracksCount) * UInt64(videoFileProperties.duration) / 8
+        videoFileProperties.fileSizeKB = videoTrackSizeKB() + audioTracksSizeKB()
         return videoFileProperties
     }
     
     public func change(videoProperties: VideoFileProperties.VideoProperties) -> VideoFileProperties {
         videoFileProperties.video = videoProperties
-        videoFileProperties.fileSizeKB = videoProperties.bitrateKbps * UInt64(videoFileProperties.duration) / 8
+        videoFileProperties.fileSizeKB = videoTrackSizeKB() + audioTracksSizeKB()
         return videoFileProperties
     }
 }
